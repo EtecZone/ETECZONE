@@ -11,7 +11,7 @@ function realizar() {
         let VelocityAtJumpX = VelocityAtJump * Math.cos(RampAngleRad);
         let VelocityAtJumpY = VelocityAtJump * Math.sin(RampAngleRad);
         let TimeInAir = 2 * VelocityAtJumpY / gField;
-        let DistanceHorizontal = VelocityAtJump * TimeInAir;
+        let DistanceHorizontal = VelocityAtJumpX * TimeInAir;
 
         document.getElementById("ang2r").innerHTML = `ANGULORrad = ${RampAngle} × (π ÷ 180) = ${RampAngleRad}`
         document.getElementById("velop").innerHTML = `VELOCIDADEp = √(2 × ${KEofJoey} ÷ ${JoeyMass}) = ${VelocityAtJump}`
