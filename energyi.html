@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="energyi.css">
+    <title>ENERGIA INCLINADA</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="angf" placeholder="ANGULO">
+        <input type="number" id="fric" placeholder="FRICÇÃO">
+        <input type="number" id="distt" placeholder="COMPRIMENTO">
+        <input type="number" id="masst" placeholder="MASSA">
+        <button onclick="realizar()">ENVIAR VALORES</button>
+    </div>
+    <div id="saida">
+        <p>PARA ACHARMOS O COMPRIMENTO EM CENTÍMETROS DEVEMOS DIVIDIR O COMPRIMENTO POR 100 </p>
+        <p id="compcm"></p>
+        <p>PARA ACHARMOS O ANGULO EM RADIANO DEVEMOS MULTIPLICAR O ANGULO POR PI DIVIDIDO PO 180 </p>
+        <p id="angr"></p>
+        <p>PARA ACHARMOS A FORÇA GRAVITACIONAL DEVEMOS MULTIPLICAR A MASSA PELA ACELERAÇÃO DA GRAVIDADE </p>
+        <p id="forceg"></p>
+        <p>PARA ACHARMOS A FORÇA GRAVITACIONAL NA CURVA DEVEMOS MULTIPLICAR A FORÇA GRAVITACIONAL PELO COSSENO DO ANGULO EM RADIANO </p>
+        <p id="forcegy"></p>
+        <p>PARA ACHARMOS A FORÇA DE FRICÇÃO DEVEMOS MULTIPLICAR A FORÇA GRAVITACIONAL NA CURVA PELO COEFICIENTE DE ATRITO </p>
+        <p id="forcef"></p>
+        <p>PARA ACHARMOS A ALTURA DEVEMOS MULTIPLICAR O COMPRIMENTO PELO SENO DO ANGULO EM RADIANO </p>
+        <p id="start"></p>
+        <p>PARA ACHARMOS A FORÇA POTENCIAL GRAVITACIONAL DEVEMOS MULTIPLICAR A ALTURA PELA MASSA </p>
+        <p id="potg"></p>
+        <p>PARA ACHARMOS O CALOR DEVEMOS MULTIPLICAR A FORÇA DE FRICÇÃO PELO COMPRIMENTO </p>
+        <p id="heat"></p>
+        <p>PARA ACHARMOS A FORÇA CINÉTICA DEVEMOS CALCULAR A DIFERNÇA ENTRE A ENERGIA POTENCIAL GRAVITACIONAL PELO CALOR </p>
+        <p id="cinet"></p>
+        <p>PARA ACHARMOS A VELOCIDADE QUADRADA DEVEMOS MULTIPLICAR 2 PELA ENERGIA CINÉTICA E DIVIDIR ESSE VALOR PELA MASSA  </p>
+        <p id="speed2"></p>
+        <p>PARA ACHARMOS A VELOCIDADE DEVEMOS FAZER A RAIZ QUADRADA DA VELOCIDADE QUADRADA </p>
+        <p id="speed"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="energyi.js"></script>
+</body>
+</html>
